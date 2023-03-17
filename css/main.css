@@ -1,0 +1,56 @@
+#time{
+    background-image: url("../img/back.jpg");
+    width: 600px;
+    height: 600px;
+    border-radius: 600px;
+    position: relative;
+    margin: auto;
+}
+
+#ms{
+    background-color: blue;
+    border-radius: 5px;
+    width: 10px;
+    height: 250px;
+    position: absolute;
+    left: 297px;
+    top: 51px;
+    z-index: 3;
+    transform-origin: bottom;
+    animation: arrows 1s linear infinite;
+}
+
+#s{
+    background-color: red;
+    border-radius: 7px;
+    width: 14px;
+    height: 200px;
+    position: absolute;
+    left: 297px;
+    top: 101px;
+    z-index: 2;
+    transform-origin: bottom;
+    animation: arrows 60s linear infinite;
+}
+
+#m{
+    background-color: green;
+    border-radius: 9px;
+    width: 16px;
+    height: 180px;
+    position: absolute;
+    left: 297px;
+    top: 121px;
+    z-index: 1;
+    transform-origin: bottom;
+    animation: arrows 3600s linear infinite;
+}
+
+@keyframes arrows {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
